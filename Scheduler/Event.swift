@@ -13,10 +13,8 @@ struct Event {
     var name: String
     
     static func getTestData() -> [Event] {
+        let eventNames = ["Review UITableView lesson and videos", "CocoaPods Peer Lab", "Unit Assessment", "iOS Soho Meetup", "112 miles birthday bike ride 🥳", "Ladies who code", "facebook", "iOS Study Group", "Redo BlackJack Project for OOP practice", "Preview Unit 3 over the weekend"]
         var events = [Event]()
-        
-        let eventNames = ["Code", "Unit Assessment", "iOS Soho", "Births 112 mile bike ride", "Ladies Night Out"]
-        
         for eventName in eventNames {
             let event = Event(date:Date(), name: eventName)
             events.append(event)
